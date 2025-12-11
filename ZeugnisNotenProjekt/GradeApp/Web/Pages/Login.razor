@@ -1,0 +1,40 @@
+﻿@using Web.Services;
+
+@page "/login"
+
+@inject IAuthService AuthService
+
+<title>Login</title>
+
+<h3>Login</h3>
+
+<EditForm Model="loginModel" OnValidSubmit="HandleLogin">
+    <DataAnnotationsValidator />
+
+    <div class="mb-3 listItem">
+        <InputText @bind-Value="loginModel.Email" placeholder="Email" class="form-control custom-input" />
+        <ValidationMessage For="@(() => loginModel.Email)" />
+
+        <InputText @bind-Value="loginModel.Password" placeholder="Password" class="form-control custom-input" />
+        <ValidationMessage For="@(() => loginModel.Password)" />
+
+        <button type="submit" class="btn btn-danger mt-2">Login</button>
+    </div>
+</EditForm>
+
+@if (!string.IsNullOrEmpty(_errorMessage))
+{
+    <div class="alert alert-danger">
+        @_errorMessage
+    </div>
+}
+@if (!string.IsNullOrEmpty(_successMessage))
+{
+    <div class=" alert alert-success">
+        @_successMessage
+    </div>
+}
+
+@code {
+
+}
