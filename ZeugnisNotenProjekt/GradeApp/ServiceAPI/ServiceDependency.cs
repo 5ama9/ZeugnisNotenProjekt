@@ -1,5 +1,9 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using DataAccessAPI;
+using DataAccessAPI.Interfaces;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ServiceAPI.Interfaces;
+using ServiceAPI.Services;
 
 namespace ServiceAPI;
 
@@ -21,5 +25,6 @@ public static class ServiceDependency
 
         // Next, register the logic layer services.
         services.AddScoped<IGradeService, GradeService>();
+        services.AddScoped<IAuthService, AuthService>();
     }
 }

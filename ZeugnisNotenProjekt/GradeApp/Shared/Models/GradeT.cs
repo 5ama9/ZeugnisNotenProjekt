@@ -9,6 +9,7 @@ namespace Shared.Models;
 [Table("grade")]
 public class GradeT
 {
+    [Key]
     public int Id { get; set; }
 
     [Required]

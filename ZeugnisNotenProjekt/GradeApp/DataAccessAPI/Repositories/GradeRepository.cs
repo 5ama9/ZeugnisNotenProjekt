@@ -1,4 +1,5 @@
 ﻿using DataAccessAPI.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using Shared.Models;
 
 namespace DataAccessAPI.Repositories;
@@ -26,6 +27,11 @@ public class GradeRepository : IGradeRepository
         }
         _db.Grades.Add(newGrade);
         _db.SaveChanges();
-        return newGrade;
+        return _db.Grades
+        .Include(g => g.Approver)
+        .Include(g => g.Creator)
+        .Include(g => g.Status)
+        .Include(g => g.Rounding)
+        .FirstOrDefault(g => g.Id == newGrade.Id);
     }
 }

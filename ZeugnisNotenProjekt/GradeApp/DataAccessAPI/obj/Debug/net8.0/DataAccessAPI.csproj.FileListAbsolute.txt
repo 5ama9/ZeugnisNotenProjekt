@@ -1,0 +1,16 @@
+C:\Users\perekucy\Desktop\ProjectM431\ZeugnisNotenProjekt\GradeApp\DataAccessAPI\bin\Debug\net8.0\DataAccessAPI.deps.json
+C:\Users\perekucy\Desktop\ProjectM431\ZeugnisNotenProjekt\GradeApp\DataAccessAPI\bin\Debug\net8.0\DataAccessAPI.dll
+C:\Users\perekucy\Desktop\ProjectM431\ZeugnisNotenProjekt\GradeApp\DataAccessAPI\bin\Debug\net8.0\DataAccessAPI.pdb
+C:\Users\perekucy\Desktop\ProjectM431\ZeugnisNotenProjekt\GradeApp\DataAccessAPI\bin\Debug\net8.0\Shared.dll
+C:\Users\perekucy\Desktop\ProjectM431\ZeugnisNotenProjekt\GradeApp\DataAccessAPI\bin\Debug\net8.0\Shared.pdb
+C:\Users\perekucy\Desktop\ProjectM431\ZeugnisNotenProjekt\GradeApp\DataAccessAPI\obj\Debug\net8.0\DataAccessAPI.csproj.AssemblyReference.cache
+C:\Users\perekucy\Desktop\ProjectM431\ZeugnisNotenProjekt\GradeApp\DataAccessAPI\obj\Debug\net8.0\DataAccessAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\perekucy\Desktop\ProjectM431\ZeugnisNotenProjekt\GradeApp\DataAccessAPI\obj\Debug\net8.0\DataAccessAPI.AssemblyInfoInputs.cache
+C:\Users\perekucy\Desktop\ProjectM431\ZeugnisNotenProjekt\GradeApp\DataAccessAPI\obj\Debug\net8.0\DataAccessAPI.AssemblyInfo.cs
+C:\Users\perekucy\Desktop\ProjectM431\ZeugnisNotenProjekt\GradeApp\DataAccessAPI\obj\Debug\net8.0\DataAccessAPI.csproj.CoreCompileInputs.cache
+C:\Users\perekucy\Desktop\ProjectM431\ZeugnisNotenProjekt\GradeApp\DataAccessAPI\obj\Debug\net8.0\DataAccessAPI.sourcelink.json
+C:\Users\perekucy\Desktop\ProjectM431\ZeugnisNotenProjekt\GradeApp\DataAccessAPI\obj\Debug\net8.0\DataAcce.596CFA1A.Up2Date
+C:\Users\perekucy\Desktop\ProjectM431\ZeugnisNotenProjekt\GradeApp\DataAccessAPI\obj\Debug\net8.0\DataAccessAPI.dll
+C:\Users\perekucy\Desktop\ProjectM431\ZeugnisNotenProjekt\GradeApp\DataAccessAPI\obj\Debug\net8.0\refint\DataAccessAPI.dll
+C:\Users\perekucy\Desktop\ProjectM431\ZeugnisNotenProjekt\GradeApp\DataAccessAPI\obj\Debug\net8.0\DataAccessAPI.pdb
+C:\Users\perekucy\Desktop\ProjectM431\ZeugnisNotenProjekt\GradeApp\DataAccessAPI\obj\Debug\net8.0\ref\DataAccessAPI.dll

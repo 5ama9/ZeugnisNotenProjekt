@@ -25,5 +25,6 @@ public static class DataDependency
                              ServerVersion.AutoDetect(connectionString)));
 
         services.AddScoped<IGradeRepository, GradeRepository>();
+        services.AddScoped<IUserRepository, UserRepository>();
     }
 }

@@ -9,6 +9,7 @@ namespace Shared.Models;
 [Table("rounding")]
 public class Rounding
 {
+    [Key]
     public int Id { get; set; }
 
     [Required]
