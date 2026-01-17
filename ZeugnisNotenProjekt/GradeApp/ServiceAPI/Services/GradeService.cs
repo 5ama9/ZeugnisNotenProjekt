@@ -1,4 +1,6 @@
-﻿using DataAccessAPI.Interfaces;
+﻿using System.Diagnostics;
+using DataAccessAPI.Interfaces;
+using DataAccessAPI.Repositories;
 using ServiceAPI.Interfaces;
 using Shared.Models;
 using Shared.Models.DTOs;
@@ -102,5 +104,33 @@ public class GradeService : IGradeService
             gradesDto.Add(gradeDto);
         }
         return gradesDto;
+    }
+
+    /// <summary>
+    /// Updates the status of the grade by identifier.
+    /// </summary>
+    /// <param name="updatedGrade">The updated grade.</param>
+    /// <param name="id">The identifier.</param>
+    /// <returns>
+    /// 1 if success, 0 if not.
+    /// </returns>
+    public int UpdateGradeStatusById(UpdateGradeDto updatedGrade, int id, int userId)
+    {
+        if (updatedGrade == null)
+        {
+            return 0;
+        }
+
+        GradeT foundModel = _repository.GetGradeById(id);
+        if (foundModel == null || foundModel.ApproverId != userId)
+        {
+            return 0;
+        }
+
+        foundModel.StatusId = updatedGrade.StatusId;
+
+        _repository.UpdateGradeStatusById(foundModel);
+
+        return 1;
     }
 }

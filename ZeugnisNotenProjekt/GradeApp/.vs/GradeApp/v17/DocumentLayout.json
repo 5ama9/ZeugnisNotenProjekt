@@ -18,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 12,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GradeController.cs",
-              "DocumentMoniker": "C:\\Users\\perekucy\\Desktop\\ProjectM431\\ZeugnisNotenProjekt\\GradeApp\\WebAPI\\Controllers\\GradeController.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Controllers\\GradeController.cs",
-              "ToolTip": "C:\\Users\\perekucy\\Desktop\\ProjectM431\\ZeugnisNotenProjekt\\GradeApp\\WebAPI\\Controllers\\GradeController.cs",
-              "RelativeToolTip": "WebAPI\\Controllers\\GradeController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwDMAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T17:22:32.257Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -80,6 +67,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GradeController.cs",
+              "DocumentMoniker": "C:\\Users\\perekucy\\Desktop\\ProjectM431\\ZeugnisNotenProjekt\\GradeApp\\WebAPI\\Controllers\\GradeController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\GradeController.cs",
+              "ToolTip": "C:\\Users\\perekucy\\Desktop\\ProjectM431\\ZeugnisNotenProjekt\\GradeApp\\WebAPI\\Controllers\\GradeController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\GradeController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAcwEAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-17T18:01:55.221Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

@@ -76,5 +76,36 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.GradeController",
+    "Method": "UpdateGradeStatusById",
+    "RelativePath": "api/Grade/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updatedGrade",
+        "Type": "Shared.Models.DTOs.UpdateGradeDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Shared.Models.DTOs.GradeDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
