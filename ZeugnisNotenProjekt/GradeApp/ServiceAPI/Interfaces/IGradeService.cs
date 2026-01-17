@@ -12,4 +12,11 @@ public interface IGradeService
     /// <param name="userId">The user identifier from JWT.</param>
     /// <returns>The created game DTO.</returns>
     public GradeDto AddNewGrade(CreateGradeDto createdGrade, int userId);
+
+    /// <summary>
+    /// Gets grades by user identifier.
+    /// </summary>
+    /// <param name="id">The user identifier from JWT.</param>
+    /// <returns>Collection of GradeDtos.</returns>
+    public IEnumerable<GradeDto> GetGradesByUserId(int id);
 }

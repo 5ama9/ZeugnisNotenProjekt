@@ -17,7 +17,7 @@ public class GradeRepository : IGradeRepository
     /// </summary>
     /// <param name="newGrade">The new grade.</param>
     /// <returns>
-    /// Created game.
+    /// Created grade.
     /// </returns>
     public GradeT CreateNewGrade(GradeT newGrade)
     {
@@ -33,5 +33,22 @@ public class GradeRepository : IGradeRepository
         .Include(g => g.Status)
         .Include(g => g.Rounding)
         .FirstOrDefault(g => g.Id == newGrade.Id);
+    }
+
+    /// <summary>
+    /// Gets grades by user identifier.
+    /// </summary>
+    /// <param name="id">The identifier.</param>
+    /// <returns>
+    /// Collection of Grade models.
+    /// </returns>
+    public IEnumerable<GradeT> GetGradesByUserId(int id)
+    {
+        return _db.Grades
+                .Include(g => g.Creator)
+                .Include(g => g.Approver)
+                .Include(g => g.Status)
+                .Include(g => g.Rounding)
+                .Where(g => g.ApproverId == id);
     }
 }

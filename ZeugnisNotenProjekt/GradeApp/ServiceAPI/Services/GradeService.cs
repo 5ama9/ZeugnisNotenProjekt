@@ -13,6 +13,14 @@ public class GradeService : IGradeService
         _repository = repository;
     }
 
+    /// <summary>
+    /// Adds the new grade.
+    /// </summary>
+    /// <param name="createdGrade">The created grade DTO.</param>
+    /// <param name="userId">The user identifier from JWT.</param>
+    /// <returns>
+    /// The created game DTO.
+    /// </returns>
     public GradeDto AddNewGrade(CreateGradeDto createdGrade, int userId)
     {
         if (createdGrade == null)
@@ -56,5 +64,43 @@ public class GradeService : IGradeService
             Rounding = gradeModel.Rounding.Name
         };
         return result;
+    }
+
+    /// <summary>
+    /// Gets grades by user identifier.
+    /// </summary>
+    /// <param name="id">The user identifier from JWT.</param>
+    /// <returns>
+    /// Collection of GradeDtos.
+    /// </returns>
+    public IEnumerable<GradeDto> GetGradesByUserId(int id)
+    {
+        List<GradeT> grades = _repository.GetGradesByUserId(id).ToList();
+        if (!grades.Any())
+        {
+            return null;
+        }
+        List<GradeDto> gradesDto = new List<GradeDto>();
+
+        foreach (GradeT gradeModel in grades)
+        {
+            GradeDto gradeDto = new GradeDto
+            {
+                Id = gradeModel.Id,
+                ApproverName = $"{gradeModel.Approver.FirstName} {gradeModel.Approver.LastName}",
+                Class = gradeModel.Class,
+                CreatorName = $"{gradeModel.Creator.FirstName} {gradeModel.Creator.LastName}",
+                CreationDate = gradeModel.CreationDate,
+                FirstName = gradeModel.FirstName,
+                LastName = gradeModel.LastName,
+                Grade = gradeModel.Grade,
+                Remark = gradeModel.Remark,
+                Status = gradeModel.Status.Name,
+                Subject = gradeModel.Subject,
+                Rounding = gradeModel.Rounding.Name
+            };
+            gradesDto.Add(gradeDto);
+        }
+        return gradesDto;
     }
 }

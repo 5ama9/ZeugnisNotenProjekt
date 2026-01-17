@@ -8,6 +8,7 @@ namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class GradeController : ControllerBase
     {
         IGradeService _service;
@@ -22,7 +23,6 @@ namespace WebAPI.Controllers
         /// <param name="createdGrade">The created grade.</param>
         /// <returns>Created() 201, the created game and its location if successfully created, BadRequest() 400 if null.</returns>
         [HttpPost]
-        [Authorize]
         public ActionResult<GradeDto> CreateNewGrade(CreateGradeDto createdGrade)
         {
             string id = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -33,6 +33,23 @@ namespace WebAPI.Controllers
                 return BadRequest();
             }
             return Ok(result);
+        }
+
+        /// <summary>
+        /// Gets grades by user identifier.
+        /// </summary>
+        /// <param name="id">The user dentifier from JWT.</param>
+        /// <returns>Ok 200 and collection of grades if not null. Else Not Found.</returns>
+        [HttpGet]
+        public ActionResult<IEnumerable<GradeDto>> GetGradesByUserId(int id)
+        {
+            string userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            IEnumerable<GradeDto> grades = _service.GetGradesByUserId(int.Parse(userId));
+            if (grades == null)
+            {
+                return Unauthorized("You don't have permissions to access the grades.");
+            }
+            return Ok(grades);
         }
     }
 }
