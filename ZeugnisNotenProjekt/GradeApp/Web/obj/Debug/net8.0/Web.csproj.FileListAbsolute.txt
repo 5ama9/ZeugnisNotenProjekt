@@ -1046,8 +1046,6 @@ C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.
 C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\ljmetmm3hi-tptq2av103.gz
 C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\5usnb52h78-lfu7j35m59.gz
 C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\qa8b9owlqa-oyz0vx2fzb.gz
-C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\czmiooqbg7-zwnjoth0mz.gz
-C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\f14845i74b-xgxhifuee9.gz
 C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\staticwebassets.development.json
@@ -1058,6 +1056,8 @@ C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.
 C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\refint\Web.dll
 C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\Web.pdb
 C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\ref\Web.dll
-C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\5oas59qukp-h2969nsgo1.gz
-C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\j0qvopdxkj-48gli5g7xs.gz
-C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\roury21wbo-jjvdrxorq1.gz
+C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\czmiooqbg7-z31ebpczol.gz
+C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\f14845i74b-7o0phaqub6.gz
+C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\5oas59qukp-mwq05do8ew.gz
+C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\j0qvopdxkj-tfhba9rf67.gz
+C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\roury21wbo-kc0nbgndfv.gz

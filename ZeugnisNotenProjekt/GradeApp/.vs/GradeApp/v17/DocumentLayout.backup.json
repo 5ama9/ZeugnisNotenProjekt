@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2DF4F1EA-8A94-4D48-9B64-207FD0CAC1F8}|Web\\Web.csproj|c:\\users\\am\\zeugnisnotenprojekt\\zeugnisnotenprojekt\\gradeapp\\web\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2DF4F1EA-8A94-4D48-9B64-207FD0CAC1F8}|Web\\Web.csproj|solutionrelative:web\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DF4F1EA-8A94-4D48-9B64-207FD0CAC1F8}|Web\\Web.csproj|c:\\users\\am\\zeugnisnotenprojekt\\zeugnisnotenprojekt\\gradeapp\\web\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DF4F1EA-8A94-4D48-9B64-207FD0CAC1F8}|Web\\Web.csproj|solutionrelative:web\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DF4F1EA-8A94-4D48-9B64-207FD0CAC1F8}|Web\\Web.csproj|c:\\users\\am\\zeugnisnotenprojekt\\zeugnisnotenprojekt\\gradeapp\\web\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2DF4F1EA-8A94-4D48-9B64-207FD0CAC1F8}|Web\\Web.csproj|solutionrelative:web\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DF4F1EA-8A94-4D48-9B64-207FD0CAC1F8}|Web\\Web.csproj|c:\\users\\am\\zeugnisnotenprojekt\\zeugnisnotenprojekt\\gradeapp\\web\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DF4F1EA-8A94-4D48-9B64-207FD0CAC1F8}|Web\\Web.csproj|solutionrelative:web\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DF4F1EA-8A94-4D48-9B64-207FD0CAC1F8}|Web\\Web.csproj|c:\\users\\am\\zeugnisnotenprojekt\\zeugnisnotenprojekt\\gradeapp\\web\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DF4F1EA-8A94-4D48-9B64-207FD0CAC1F8}|Web\\Web.csproj|solutionrelative:web\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CB860DAE-0099-4EAE-9A22-5EA1B452A59B}|WebAPI\\WebAPI.csproj|c:\\users\\am\\zeugnisnotenprojekt\\zeugnisnotenprojekt\\gradeapp\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB860DAE-0099-4EAE-9A22-5EA1B452A59B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{2DF4F1EA-8A94-4D48-9B64-207FD0CAC1F8}|Web\\Web.csproj|solutionrelative:web\\pages\\login.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DF4F1EA-8A94-4D48-9B64-207FD0CAC1F8}|Web\\Web.csproj|c:\\users\\am\\zeugnisnotenprojekt\\zeugnisnotenprojekt\\gradeapp\\web\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DF4F1EA-8A94-4D48-9B64-207FD0CAC1F8}|Web\\Web.csproj|solutionrelative:web\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{94087347-30D1-4157-AC1D-A88BFC04DA4E}|Shared\\Shared.csproj|c:\\users\\am\\zeugnisnotenprojekt\\zeugnisnotenprojekt\\gradeapp\\shared\\models\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94087347-30D1-4157-AC1D-A88BFC04DA4E}|Shared\\Shared.csproj|solutionrelative:shared\\models\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -38,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,7 +94,57 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainLayout.razor.css",
+              "DocumentMoniker": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\Web\\Layout\\MainLayout.razor.css",
+              "RelativeDocumentMoniker": "Web\\Layout\\MainLayout.razor.css",
+              "ToolTip": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\Web\\Layout\\MainLayout.razor.css",
+              "RelativeToolTip": "Web\\Layout\\MainLayout.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-18T20:52:02.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\Web\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "Web\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\Web\\wwwroot\\index.html",
+              "RelativeToolTip": "Web\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-18T20:47:00.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\Web\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Web\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\Web\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Web\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-18T20:46:20.194Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\Web\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "Web\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\Web\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "Web\\wwwroot\\css\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-18T20:31:43.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\WebAPI\\Program.cs",
               "RelativeDocumentMoniker": "WebAPI\\Program.cs",
@@ -86,12 +152,11 @@
               "RelativeToolTip": "WebAPI\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T13:35:59.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T13:35:59.801Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\Web\\Program.cs",
               "RelativeDocumentMoniker": "Web\\Program.cs",
@@ -99,12 +164,11 @@
               "RelativeToolTip": "Web\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T13:19:58.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T13:19:58.442Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Login.razor.cs",
               "DocumentMoniker": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\Web\\Pages\\Login.razor.cs",
               "RelativeDocumentMoniker": "Web\\Pages\\Login.razor.cs",
@@ -112,12 +176,11 @@
               "RelativeToolTip": "Web\\Pages\\Login.razor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T13:18:16.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T13:18:16.232Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "AuthResponse.cs",
               "DocumentMoniker": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\Shared\\Models\\AuthResponse.cs",
               "RelativeDocumentMoniker": "Shared\\Models\\AuthResponse.cs",
@@ -125,12 +188,11 @@
               "RelativeToolTip": "Shared\\Models\\AuthResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T13:17:20.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T13:17:20.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\Web\\Services\\IAuthService.cs",
               "RelativeDocumentMoniker": "Web\\Services\\IAuthService.cs",
@@ -138,12 +200,11 @@
               "RelativeToolTip": "Web\\Services\\IAuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T13:14:49.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T13:14:49.569Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\Web\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Web\\Services\\AuthService.cs",
@@ -151,18 +212,17 @@
               "RelativeToolTip": "Web\\Services\\AuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T13:10:57.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T13:10:57.269Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Login.razor",
               "DocumentMoniker": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\Web\\Pages\\Login.razor",
               "RelativeDocumentMoniker": "Web\\Pages\\Login.razor",
               "ToolTip": "C:\\Users\\am\\ZeugnisNotenProjekt\\ZeugnisNotenProjekt\\GradeApp\\Web\\Pages\\Login.razor",
               "RelativeToolTip": "Web\\Pages\\Login.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-15T12:57:19.24Z",
               "EditorCaption": ""

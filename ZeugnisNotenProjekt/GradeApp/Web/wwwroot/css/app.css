@@ -12,7 +12,7 @@ a, .btn-link {
 
 .btn-primary {
     color: #fff;
-    background-color: #1b6ec2;
+    background-color: #9ec6f3;
     border-color: #1861ac;
 }
 
@@ -102,8 +102,9 @@ code {
     color: #c02d76;
 }
 
+/*used to color the items*/
 .listItem {
-    background-color: #421b19;
+    background-color: #bddde4;
     color: black;
     border-bottom: 2px;
     border-color: black;
