@@ -1,0 +1,48 @@
+﻿@using Web.Services;
+@using Microsoft.AspNetCore.Authorization
+
+@page "/teacher"
+
+@attribute [Authorize]
+@inject IGradeService GradeService
+
+<title>Note eintragen</title>
+
+<h3>Note eintragen</h3>
+
+
+<EditForm Model="newGrade" OnValidSubmit="AddGrade">
+    <DataAnnotationsValidator />
+
+    <div class="mb-3 listItem">
+        <InputText @bind-Value="newGrade.FirstName" placeholder="Vorname" class="form-control custom-input" />
+        <ValidationMessage For="@(() => newGrade.FirstName)" />
+        <InputText @bind-Value="newGrade.LastName" placeholder="Nachname" class="form-control custom-input" />
+        <ValidationMessage For="@(() => newGrade.LastName)" />
+        <InputText @bind-Value="newGrade.Class" placeholder="Klasse" class="form-control custom-input" />
+        <ValidationMessage For="@(() => newGrade.Class)" />
+        <InputText @bind-Value="newGrade.Subject" placeholder="Fach" class="form-control custom-input" />
+        <ValidationMessage For="@(() => newGrade.Class)" />
+        <InputNumber @bind-Value="newGrade.Grade" placeholder="Note" class="form-control custom-input" />
+        <ValidationMessage For="@(() => newGrade.Grade)" />
+        <InputText @bind-Value="newGrade.ApproverName" placeholder="Prorektor" class="form-control custom-input" />
+        <ValidationMessage For="@(() => newGrade.ApproverName)" />
+        <InputText @bind-Value="newGrade.Remark" placeholder="Bemerkung" class="form-control custom-input" />
+        <ValidationMessage For="@(() => newGrade.Remark)" />
+
+        <select class="form-select" @bind="newGrade.RoundingId">
+            <option value="">Auf- oder Abrunden</option>
+            @foreach (var rounding in roundings)
+            {
+                <option value="@rounding.Id">@rounding.Name</option>
+            }
+        </select>
+        <ValidationMessage For="@(() => newGrade.RoundingId)" />
+
+        <button type="submit" class="btn btn-primary mt-2">Hinzufügen</button>
+    </div>
+</EditForm>
+
+@code {
+
+}

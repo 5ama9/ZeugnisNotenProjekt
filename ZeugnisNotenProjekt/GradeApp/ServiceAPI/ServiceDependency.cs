@@ -26,5 +26,7 @@ public static class ServiceDependency
         // Next, register the logic layer services.
         services.AddScoped<IGradeService, GradeService>();
         services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<IRoundingService, RoundingService>();
+
     }
 }

@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-using DataAccessAPI.Interfaces;
-using DataAccessAPI.Repositories;
+﻿using DataAccessAPI.Interfaces;
 using ServiceAPI.Interfaces;
 using Shared.Models;
 using Shared.Models.DTOs;
@@ -53,17 +51,22 @@ public class GradeService : IGradeService
         GradeDto result = new GradeDto
         {
             Id = gradeModel.Id,
-            ApproverName = $"{gradeModel.Approver.FirstName} {gradeModel.Approver.LastName}",
-            Class = gradeModel.Class,
-            CreatorName = $"{gradeModel.Creator.FirstName} {gradeModel.Creator.LastName}",
-            CreationDate = gradeModel.CreationDate,
+
             FirstName = gradeModel.FirstName,
             LastName = gradeModel.LastName,
-            Grade = gradeModel.Grade,
-            Remark= gradeModel.Remark,
-            Status = gradeModel.Status.Name,
+            Class = gradeModel.Class,
             Subject = gradeModel.Subject,
-            Rounding = gradeModel.Rounding.Name
+
+            Grade = gradeModel.Grade,
+            Remark = gradeModel.Remark,
+            CreationDate = gradeModel.CreationDate,
+
+            // IDs
+            StatusId = gradeModel.StatusId,
+            RoundingId = gradeModel.RoundingId,
+
+            CreatorName = $"{gradeModel.Creator.FirstName} {gradeModel.Creator.LastName}",
+            ApproverName = $"{gradeModel.Approver.FirstName} {gradeModel.Approver.LastName}"
         };
         return result;
     }
@@ -86,22 +89,26 @@ public class GradeService : IGradeService
 
         foreach (GradeT gradeModel in grades)
         {
-            GradeDto gradeDto = new GradeDto
+            GradeDto result = new GradeDto
             {
                 Id = gradeModel.Id,
-                ApproverName = $"{gradeModel.Approver.FirstName} {gradeModel.Approver.LastName}",
-                Class = gradeModel.Class,
-                CreatorName = $"{gradeModel.Creator.FirstName} {gradeModel.Creator.LastName}",
-                CreationDate = gradeModel.CreationDate,
+
                 FirstName = gradeModel.FirstName,
                 LastName = gradeModel.LastName,
+                Class = gradeModel.Class,
+                Subject = gradeModel.Subject,
+
                 Grade = gradeModel.Grade,
                 Remark = gradeModel.Remark,
-                Status = gradeModel.Status.Name,
-                Subject = gradeModel.Subject,
-                Rounding = gradeModel.Rounding.Name
+                CreationDate = gradeModel.CreationDate,
+
+                // IDs
+                StatusId = gradeModel.StatusId,
+                RoundingId = gradeModel.RoundingId,
+
+                CreatorName = $"{gradeModel.Creator.FirstName} {gradeModel.Creator.LastName}",
+                ApproverName = $"{gradeModel.Approver.FirstName} {gradeModel.Approver.LastName}"
             };
-            gradesDto.Add(gradeDto);
         }
         return gradesDto;
     }

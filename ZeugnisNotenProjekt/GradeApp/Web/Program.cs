@@ -16,6 +16,7 @@ public class Program
 
         //Dependency Injection
         builder.Services.AddScoped<IAuthService, AuthService>();
+        builder.Services.AddScoped<IGradeService, GradeService>();
 
         await builder.Build().RunAsync();
     }

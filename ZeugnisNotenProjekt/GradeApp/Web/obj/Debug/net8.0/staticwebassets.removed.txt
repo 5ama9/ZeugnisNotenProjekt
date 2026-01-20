@@ -1,1 +1,0 @@
-C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\wwwroot\sample-data\weather.json
