@@ -22,18 +22,6 @@ public partial class Prorector
             _errorMessage = "Error while getting data.";
         }
     }
+    
 
-    private async Task AddGrade()
-    {
-        try
-        {
-            await GradeService.AddAsync(newGrade);
-            grades = await GradeService.GetAsync();
-            newGrade = new GradeDto();
-        }
-        catch
-        {
-            _errorMessage = "Error while adding grade.";
-        }
-    }
 }

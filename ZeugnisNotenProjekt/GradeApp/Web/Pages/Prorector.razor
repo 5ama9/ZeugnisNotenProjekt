@@ -1,9 +1,9 @@
 ﻿@using Web.Services;
 @using Microsoft.AspNetCore.Authorization
 
-@page "/protector"
+@page "/prorector"
 
-@attribute [Authorize]
+@* @attribute [Authorize] *@
 @inject IGradeService GradeService
 
 <title>Anfragen</title>
@@ -11,30 +11,34 @@
 <h3>Anfragen</h3>
 
 @foreach (var grade in grades)
-    {
+{
     <li class="row listItem align-items-center justify-content-between">
         <div class="col-2">
-            {
-                <strong class="">@grade.CreatorName</strong>
-            <div class="col-2">
-                <p>@grade.FirstName @grade.LastName</p>
-            </div>
-            <div class="col-2">
-                <p>@grade.Class</p>
-            </div>
-            <div class="col-2">
-                <p>@grade.Subject</p>
-            </div>
-            <div class="col-2">
-                <p>@grade.Grade</p>
-            </div>
+            <strong>@grade.CreatorName</strong>
+        </div>
 
-                <button class="btn btn-sm btn-primary" >Ablehnen</button>
-                <button class="btn btn-sm btn-primary" >Annehmen</button>
-            }
+        <div class="col-2">
+            <p>@grade.FirstName @grade.LastName</p>
+        </div>
+
+        <div class="col-2">
+            <p>@grade.Class</p>
+        </div>
+
+        <div class="col-2">
+            <p>@grade.Subject</p>
+        </div>
+
+        <div class="col-2">
+            <p>@grade.Grade</p>
+        </div>
+
+        <div class="col-2">
+            <button class="btn btn-sm btn-danger">Ablehnen</button>
+            <button class="btn btn-sm btn-success">Annehmen</button>
         </div>
     </li>
-    }
+}
 @code {
 
 }

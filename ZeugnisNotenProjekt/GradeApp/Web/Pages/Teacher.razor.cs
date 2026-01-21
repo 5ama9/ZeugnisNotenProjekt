@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
-using Shared.Models;
 using Shared.Models.DTOs;
+using Web.Services;
 
 namespace Web.Pages;
 
@@ -8,9 +8,8 @@ public partial class Teacher
 {
     private List<GradeDto> grades = new();
     private List<RoundingDto> roundings = new();
-
     private GradeDto newGrade = new();
-    private string? _errorMessage;
+    private string? errorMessage;
 
     protected override async Task OnInitializedAsync()
     {
@@ -21,7 +20,7 @@ public partial class Teacher
         }
         catch
         {
-            _errorMessage = "Error while getting data.";
+            errorMessage = "Error while loading data.";
         }
     }
 
@@ -35,8 +34,7 @@ public partial class Teacher
         }
         catch
         {
-            _errorMessage = "Error while adding grade.";
+            errorMessage = "Error while adding grade.";
         }
     }
 }
-

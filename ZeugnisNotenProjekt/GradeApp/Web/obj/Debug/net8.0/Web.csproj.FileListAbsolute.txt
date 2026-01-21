@@ -1058,6 +1058,6 @@ C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.
 C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\ref\Web.dll
 C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\czmiooqbg7-uwaixvm30v.gz
 C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\f14845i74b-wx9u4aw4dd.gz
-C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\5oas59qukp-cr9sc3cqy7.gz
-C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\j0qvopdxkj-wgh7h9atj2.gz
-C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\roury21wbo-hdunhnxup1.gz
+C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\5oas59qukp-ewjohp79bh.gz
+C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\j0qvopdxkj-zfqpc3jt6q.gz
+C:\Users\am\ZeugnisNotenProjekt\ZeugnisNotenProjekt\GradeApp\Web\obj\Debug\net8.0\compressed\roury21wbo-yinrj3848e.gz
