@@ -4,7 +4,7 @@
 
 @page "/prorector"
 
-@* @attribute [Authorize] *@
+@attribute [Authorize]
 @inject IGradeService GradeService
 
 <title>Anfragen</title>
@@ -13,33 +13,40 @@
 
 @foreach (GradeDto grade in grades)
 {
-    <li class="row listItem align-items-center justify-content-between">
-        <div class="col-2">
-            <strong>@grade.CreatorName</strong>
-        </div>
+    <li class="row mb-4 listItem align-items-center justify-content-between">
+        <div class="row">
+            <div class="col-2">
+                <strong>@grade.CreatorName</strong>
+            </div>
 
-        <div class="col-2">
-            <p>@grade.FirstName @grade.LastName</p>
-        </div>
+            <div class="col-2">
+                <p>Schüler/in: @grade.FirstName @grade.LastName</p>
+            </div>
 
-        <div class="col-2">
-            <p>@grade.Class</p>
-        </div>
+            <div class="col-2">
+                <p>Klasse: @grade.Class</p>
+            </div>
 
-        <div class="col-2">
-            <p>@grade.Subject</p>
-        </div>
+            <div class="col-2">
+                <p>Fach: @grade.Subject</p>
+            </div>
 
-        <div class="col-2">
-            <p>@grade.Grade</p>
-        </div>
+            <div class="col-2">
+                <p>Note: @grade.Grade</p>
+            </div>
 
-        <div class="col-2">
-            <button class="btn btn-sm btn-danger">Ablehnen</button>
-            <button class="btn btn-sm btn-success">Annehmen</button>
+            <div class="col-2">
+                <button class="btn btn-sm btn-third">Ablehnen</button>
+                <button class="btn btn-sm btn-primary">Annehmen</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <p class="col-6">Bemerkung: @grade.Remark</p>
         </div>
     </li>
 }
+
 @code {
 
 }

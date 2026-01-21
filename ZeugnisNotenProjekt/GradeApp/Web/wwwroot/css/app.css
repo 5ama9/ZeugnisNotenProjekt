@@ -16,6 +16,12 @@ a, .btn-link {
     border-color: #1861ac;
 }
 
+.btn-third {
+    color: #fff1d5;
+    background-color: #9ec6f3;
+    border-color: #1861ac;
+}
+
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
@@ -110,4 +116,21 @@ code {
     border-color: black;
     border-radius: 5px;
     padding: 7px;
+}
+
+/*CSS for login page*/
+.login-wrapper {
+    height: calc(100vh - 56px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 200px;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #e6f4f7;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }

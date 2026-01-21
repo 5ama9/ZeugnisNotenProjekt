@@ -22,7 +22,7 @@ public class GradeDto
 
     public string? Remark { get; set; }
 
-    public DateTime CreationDate { get; set; }
+    public DateTime? CreationDate { get; set; }
 
     [Required(ErrorMessage = "Rounding is required")]
     public int? RoundingId { get; set; }

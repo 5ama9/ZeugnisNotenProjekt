@@ -8,40 +8,73 @@
 
 <title>Note eintragen</title>
 
-<h3>Note eintragen</h3>
-
-
 <EditForm Model="newGrade" OnValidSubmit="AddGrade">
     <DataAnnotationsValidator />
 
-    <div class="mb-3 listItem">
-        <InputText @bind-Value="newGrade.FirstName" placeholder="Vorname" class="form-control custom-input" />
-        <ValidationMessage For="@(() => newGrade.FirstName)" />
-        <InputText @bind-Value="newGrade.LastName" placeholder="Nachname" class="form-control custom-input" />
-        <ValidationMessage For="@(() => newGrade.LastName)" />
-        <InputText @bind-Value="newGrade.Class" placeholder="Klasse" class="form-control custom-input" />
-        <ValidationMessage For="@(() => newGrade.Class)" />
-        <InputText @bind-Value="newGrade.Subject" placeholder="Fach" class="form-control custom-input" />
-        <ValidationMessage For="@(() => newGrade.Class)" />
-        <InputNumber @bind-Value="newGrade.Grade" placeholder="Note" class="form-control custom-input" />
-        <ValidationMessage For="@(() => newGrade.Grade)" />
-        <InputNumber @bind-Value="newGrade.ApproverId" placeholder="ProrektorId" class="form-control custom-input" />
-        <ValidationMessage For="@(() => newGrade.ApproverId)" />
-        <InputText @bind-Value="newGrade.Remark" placeholder="Bemerkung" class="form-control custom-input" />
-        <ValidationMessage For="@(() => newGrade.Remark)" />
+    <div class="login-wrapper listItem">
+        <div class="login-card">
 
-        <select class="form-select" @bind="newGrade.RoundingId">
-            <option value="">Auf- oder Abrunden</option>
-            @foreach (var rounding in roundings)
-            {
-                <option value="@rounding.Id">@rounding.Name</option>
-            }
-        </select>
-        <ValidationMessage For="@(() => newGrade.RoundingId)" />
+            <div class="text-center">
+                <h3>Note eintragen</h3>
+            </div>
 
-        <button type="submit" class="btn btn-primary mt-2">Hinzufügen</button>
+            <label for="firstname" class="form-label">Vorname Lernend/er</label>
+            <InputText @bind-Value="newGrade.FirstName" id="firstname" class="form-control custom-input" />
+            <ValidationMessage For="@(() => newGrade.FirstName)" />
+
+            <label for="lastname" class="form-label">Nachname Lernend/er</label>
+            <InputText @bind-Value="newGrade.LastName" id="lastname" class="form-control custom-input" />
+            <ValidationMessage For="@(() => newGrade.LastName)" />
+
+            <label for="class" class="form-label">Klasse</label>
+            <InputText @bind-Value="newGrade.Class" id="class" class="form-control custom-input" />
+            <ValidationMessage For="@(() => newGrade.Class)" />
+
+            <label for="subject" class="form-label">Fach</label>
+            <InputText @bind-Value="newGrade.Subject" id="subject" class="form-control custom-input" />
+            <ValidationMessage For="@(() => newGrade.Class)" />
+
+            <div class="row">
+                <div class="col">
+                    <label for="grade" class="form-label">Note</label>
+                    <InputNumber @bind-Value="newGrade.Grade" id="grade" class="form-control custom-input" />
+                    <ValidationMessage For="@(() => newGrade.Grade)" />
+                </div>
+
+                <div class="col">
+                    <label for="rounding" class="form-label">Auf/Ab</label>
+                    <select class="form-select" id="rounding" @bind="newGrade.RoundingId">
+                        <option value="">Auf- oder Abrunden</option>
+                        @foreach (var rounding in roundings)
+                        {
+                            <option value="@rounding.Id">@rounding.Name</option>
+                        }
+                    </select>
+                    <ValidationMessage For="@(() => newGrade.RoundingId)" />
+                </div>
+            </div>
+
+            <label for="approver" class="form-label">Prorektor/in</label>
+            <InputNumber @bind-Value="newGrade.ApproverId" id="approver" class="form-control custom-input" />
+            <ValidationMessage For="@(() => newGrade.ApproverId)" />
+
+            <label for="remark" class="form-label">Bemerkung</label>
+            <InputText @bind-Value="newGrade.Remark" id="remark" class="form-control custom-input" />
+            <ValidationMessage For="@(() => newGrade.Remark)" />
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary mt-2">Hinzufügen</button>
+                </div>
+        </div>
     </div>
 </EditForm>
+
+@if (!string.IsNullOrEmpty(_errorMessage))
+{
+    <div class="alert alert-danger">
+        @_errorMessage
+    </div>
+}
 
 @code {
 

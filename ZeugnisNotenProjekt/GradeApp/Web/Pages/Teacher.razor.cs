@@ -9,7 +9,8 @@ public partial class Teacher
     private List<GradeDto> grades = new();
     private List<RoundingDto> roundings = new();
     private GradeDto newGrade = new();
-    private string? errorMessage;
+
+    private string? _errorMessage;
 
     protected override async Task OnInitializedAsync()
     {
@@ -20,7 +21,7 @@ public partial class Teacher
         }
         catch
         {
-            errorMessage = "Error while loading data.";
+            _errorMessage = "Error while loading data.";
         }
     }
 
@@ -34,7 +35,7 @@ public partial class Teacher
         }
         catch
         {
-            errorMessage = "Error while adding grade.";
+            _errorMessage = "Error while adding grade.";
         }
     }
 }

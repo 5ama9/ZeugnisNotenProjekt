@@ -35,7 +35,7 @@ public class GradeT
     [StringLength(400)]
     public string Remark { get; set; }
 
-    public DateTime CreationDate { get; set; }
+    public DateTime? CreationDate { get; set; }
 
     public Rounding Rounding { get; set; }
     public User Approver { get; set; }
