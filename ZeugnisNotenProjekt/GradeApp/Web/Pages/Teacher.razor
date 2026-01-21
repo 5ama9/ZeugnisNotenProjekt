@@ -25,8 +25,8 @@
         <ValidationMessage For="@(() => newGrade.Class)" />
         <InputNumber @bind-Value="newGrade.Grade" placeholder="Note" class="form-control custom-input" />
         <ValidationMessage For="@(() => newGrade.Grade)" />
-        <InputText @bind-Value="newGrade.ApproverName" placeholder="Prorektor" class="form-control custom-input" />
-        <ValidationMessage For="@(() => newGrade.ApproverName)" />
+        <InputNumber @bind-Value="newGrade.ApproverId" placeholder="ProrektorId" class="form-control custom-input" />
+        <ValidationMessage For="@(() => newGrade.ApproverId)" />
         <InputText @bind-Value="newGrade.Remark" placeholder="Bemerkung" class="form-control custom-input" />
         <ValidationMessage For="@(() => newGrade.Remark)" />
 

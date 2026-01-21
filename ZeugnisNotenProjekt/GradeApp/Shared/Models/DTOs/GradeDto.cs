@@ -30,5 +30,5 @@ public class GradeDto
     public int StatusId { get; set; }
 
     public string CreatorName { get; set; }
-    public string ApproverName { get; set; } = string.Empty;
+    public int ApproverId { get; set; }
 }

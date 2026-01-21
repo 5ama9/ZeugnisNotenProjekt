@@ -42,14 +42,17 @@ public class GradeController : ControllerBase
     /// <param name="id">The user dentifier from JWT.</param>
     /// <returns>Ok 200 and collection of grades if not null. Else Not Found.</returns>
     [HttpGet]
-    public ActionResult<IEnumerable<GradeDto>> GetGradesByUserId(int id)
+    public ActionResult<IEnumerable<GradeDto>> GetGradesByUserId()
     {
-        string userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-        IEnumerable<GradeDto> grades = _service.GetGradesByUserId(int.Parse(userId));
-        if (grades == null)
+        string? userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+        if (userId == null)
         {
-            return Unauthorized("You don't have permissions to access the grades.");
+            return Unauthorized();
         }
+
+        IEnumerable<GradeDto> grades = _service.GetGradesByUserId(int.Parse(userId));
+
         return Ok(grades);
     }
 

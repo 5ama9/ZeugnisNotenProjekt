@@ -66,7 +66,8 @@ public class GradeService : IGradeService
             RoundingId = gradeModel.RoundingId,
 
             CreatorName = $"{gradeModel.Creator.FirstName} {gradeModel.Creator.LastName}",
-            ApproverName = $"{gradeModel.Approver.FirstName} {gradeModel.Approver.LastName}"
+            //ApproverName = $"{gradeModel.Approver.FirstName} {gradeModel.Approver.LastName}"
+            ApproverId = gradeModel.ApproverId
         };
         return result;
     }
@@ -107,8 +108,10 @@ public class GradeService : IGradeService
                 RoundingId = gradeModel.RoundingId,
 
                 CreatorName = $"{gradeModel.Creator.FirstName} {gradeModel.Creator.LastName}",
-                ApproverName = $"{gradeModel.Approver.FirstName} {gradeModel.Approver.LastName}"
+                //ApproverName = $"{gradeModel.Approver.FirstName} {gradeModel.Approver.LastName}"
+                ApproverId = gradeModel.ApproverId
             };
+            gradesDto.Add(result);
         }
         return gradesDto;
     }
