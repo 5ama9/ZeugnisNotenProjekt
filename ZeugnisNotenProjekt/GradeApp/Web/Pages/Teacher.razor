@@ -12,7 +12,7 @@
     <DataAnnotationsValidator />
 
     <div class="login-wrapper listItem">
-        <div class="login-card">
+        <div class="login-card-main">
 
             <div class="text-center">
                 <h3>Note eintragen</h3>
@@ -65,16 +65,22 @@
                 <div class="text-center">
                     <button type="submit" class="btn btn-primary mt-2">Hinzufügen</button>
                 </div>
+
+            @if (!string.IsNullOrEmpty(_errorMessage))
+            {
+                <div class="alert alert-danger">
+                    @_errorMessage
+                </div>
+            }
+            @if (!string.IsNullOrEmpty(_successMessage))
+            {
+                <div class=" alert alert-success">
+                    @_successMessage
+                </div>
+            }
         </div>
     </div>
 </EditForm>
-
-@if (!string.IsNullOrEmpty(_errorMessage))
-{
-    <div class="alert alert-danger">
-        @_errorMessage
-    </div>
-}
 
 @code {
 

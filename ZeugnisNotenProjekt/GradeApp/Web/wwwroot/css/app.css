@@ -10,15 +10,16 @@ a, .btn-link {
     color: black;
 }
 
+/*custom button colors*/
 .btn-primary {
-    color: #fff;
+    color: black;
     background-color: #9ec6f3;
     border-color: #1861ac;
 }
 
 .btn-third {
-    color: #fff1d5;
-    background-color: #9ec6f3;
+    color: black;
+    background-color: #fff1d5;
     border-color: #1861ac;
 }
 
@@ -128,7 +129,16 @@ code {
 
 .login-card {
     width: 100%;
-    max-width: 200px;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #e6f4f7;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-card-main {
+    width: 100%;
+    max-width: 600px;
     padding: 2rem;
     border-radius: 8px;
     background-color: #e6f4f7;

@@ -11,6 +11,7 @@ public partial class Teacher
     private GradeDto newGrade = new();
 
     private string? _errorMessage;
+    private string? _successMessage;
 
     protected override async Task OnInitializedAsync()
     {
@@ -32,6 +33,7 @@ public partial class Teacher
             await GradeService.AddAsync(newGrade);
             grades = await GradeService.GetAsync();
             newGrade = new GradeDto();
+            _successMessage = "Success while adding Grade.";
         }
         catch
         {
