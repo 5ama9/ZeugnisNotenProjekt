@@ -17,5 +17,9 @@ public interface IGradeService
     /// <returns>success code</returns>
     Task AddAsync(GradeDto newGrade);
 
+    /// <summary>
+    /// Method to get/ load the Roundings from the API
+    /// </summary>
+    /// <returns>the found roundings</returns>
     Task<List<RoundingDto>> GetRoundingsAsync();
 }

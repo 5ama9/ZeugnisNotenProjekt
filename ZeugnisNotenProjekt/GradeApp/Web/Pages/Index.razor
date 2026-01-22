@@ -2,6 +2,9 @@
 @inject NavigationManager Navigation
 
 @code {
+    /// <summary>
+    /// added navigation, to load login as front page
+    /// </summary>
     protected override void OnInitialized()
     {
         Navigation.NavigateTo("/login", replace: true);
