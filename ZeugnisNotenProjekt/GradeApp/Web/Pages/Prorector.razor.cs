@@ -22,6 +22,4 @@ public partial class Prorector
             _errorMessage = "Error while getting data.";
         }
     }
-    
-
 }
